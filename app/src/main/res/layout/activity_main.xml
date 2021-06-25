@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!--Propiedades para el texto de encabezado-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="20sp"
+        android:text="SYNC-ADAPTER CONTACTOS"/>
+    <!--Propiedades para el campo de texto Nombre-->
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:gravity="center"
+        android:textColorHint="@android:color/holo_blue_dark"
+        android:textStyle="bold"
+        android:hint="Nombre"/>
+    <!--Propiedades para el campo de texto Teléfono-->
+    <EditText
+        android:id="@+id/etTelefono"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="phone"
+        android:gravity="center"
+        android:textColorHint="@android:color/holo_blue_dark"
+        android:textStyle="bold"
+        android:hint="Teléfono"/>
+    <!--propiedades para el botón Guardar-->
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="Guardar"/>
+    <!--Propiedad para mostrar en un ListView-->
+    <ListView
+        android:id="@+id/lvContactos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</LinearLayout>
